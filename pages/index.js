@@ -94,13 +94,13 @@ export default function Home() {
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl motion-safe:animate-fadeIn">
               <span className="text-teal-700">Full Stack Developer</span> providing services for programming and design
-              needs. Join me down below and let's get coding!
+              needs. Join me down below and lets get coding!
             </p>
 
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400 motion-safe:animate-fadeIn">
-              <a href="https://linkedin.com/in/norman-park" target="_blank"><AiFillLinkedin className="hover:scale-125 transition-all"/></a>
-              <a href="https://github.com/JustTheNorm" target="_blank"><AiFillGithub className="hover:scale-125 transition-all"/></a>
-              <a href="https://soundcloud.com/n_p_music" target="_blank"><FaMusic className="hover:scale-125 transition-all"/></a>
+              <a href="https://linkedin.com/in/norman-park" target="_blank" rel="noopener noreferrer"><AiFillLinkedin className="hover:scale-125 transition-all"/></a>
+              <a href="https://github.com/JustTheNorm" target="_blank" rel="noopener noreferrer"><AiFillGithub className="hover:scale-125 transition-all"/></a>
+              <a href="https://soundcloud.com/n_p_music" target="_blank" rel="noopener noreferrer"><FaMusic className="hover:scale-125 transition-all"/></a>
             </div>
             <div class="home__scroll hover:translate-y-1 hover:transition-all">
             <a href="#education" class="home__scroll-button">
@@ -124,7 +124,7 @@ export default function Home() {
             <div id="edu" className="dark:bg-white skew-y-2 mx-20 rounded-xl hover:scale-105 transition-all">
             <p className="text-center text-lg py-2 leading-8 text-gray-800 dark:text-gray-900 motion-safe:animate-fadeIn ml-5 ">
             <br/><br/><br/><br/>
-              At age 29, I decided to make a career shift into tech! I'm a self-starter who understands the importance of
+              At age 29, I decided to make a career shift into tech! Im a self-starter who understands the importance of
               <span className="text-blue-500"> DEADLINES </span>
               and <span className="text-blue-500">EFFICIENCY. </span>
               I hope to be part of your next project!
@@ -209,7 +209,7 @@ export default function Home() {
                 Backend
               </h3>
               <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
+                Do you have an idea for your next great website? Lets make it a
                 reality.
               </p>
               <h4 className="py-4 text-teal-600">Backend Tools I Use</h4>
