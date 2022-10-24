@@ -116,14 +116,14 @@ export default function Home() {
           
         </section>
         <section className="animated">
-        <h3 className="text-center text-3xl py-1 dark:text-white -skew-y-2 ml-10 hover:scale-105 transition-all" id="education"><br/>Education</h3> 
+        
           <div className="-skew-y-2 bg-teal-500" id="slanted">
-
-            <br/><br/><br/><br/><br/><br/><br/>
+          <h3 className="text-center text-3xl py-1 dark:text-white skew-y-2 ml-10 hover:scale-105 transition-all motion-safe:animate-bounce" id="education"><br/>Education</h3> 
+            <br/><br/><br/><br/><br/>
 
             <div id="edu" className="dark:bg-white skew-y-2 mx-20 rounded-xl hover:scale-105 transition-all">
             <p className="text-center text-lg py-2 leading-8 text-gray-800 dark:text-gray-900 motion-safe:animate-fadeIn ml-5 ">
-            <br/><br/><br/><br/>
+            <br/><br/><br/>
               At age 29, I decided to make a career shift into tech! Im a self-starter who understands the importance of
               <span className="text-blue-500"> DEADLINES </span>
               and <span className="text-blue-500">EFFICIENCY. </span>
@@ -271,18 +271,20 @@ export default function Home() {
             </div>
         </section><br/><br/><br/>
         <section className="py-10">
-          <div>
-            <h3 className="text-3xl py-1 dark:text-white text-center -skew-y-2 hover:scale-105 transition-all"  id="portfolio">Portofolio</h3>
-            
-          </div>
-          <br/>
+          
           
           
           {/* portfolio images */}
-          
-          <div className="bg-teal-500 flex flex-col gap-10 py-10 px-40 lg:flex-row lg:flex-wrap -skew-y-2">
+          <div >
+            <h3 className="text-3xl py-1 dark:text-white text-center skew-y-2 hover:scale-105 transition-all motion-safe:animate-bounce "  id="portfolio">Portofolio</h3>
             
-            <div className="basis-1/4 flex-1 skew-y-2 hover:scale-105 transition-all">
+          </div>
+          
+          <div className="bg-teal-500 flex flex-col gap-10 py-10 px-40 lg:flex-row lg:flex-wrap -skew-y-2 ">
+          
+          <br/>
+          <br/>
+            <div className="basis-1/4 flex-1 skew-y-2 hover:scale-105 transition-all ">
               
               <Image
                 className="rounded-lg object-cover "
@@ -328,7 +330,7 @@ export default function Home() {
                 src={web5}
               />
             </div>
-            <div className="basis-1/3 flex-1 skew-y-2 hover:scale-105 transition-all ">
+            <div className="basis-1/4 flex-1 skew-y-2 hover:scale-105 transition-all ">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -337,12 +339,20 @@ export default function Home() {
                 src={web6}
               />
             </div>
+            <div className="text-center motion-safe:animate-bounce skew-y-2">
+            <a href="#contact" class="home__scroll-button">
+                <i class="uil uil-mouse-alt home__scroll-mouse dark:text-gray-200 "></i>
+                    <span class="home__scroll-name dark:text-gray-200 ">Contact Me</span>
+                <i class="uil uil-arrow-down home__scroll-arrow dark:text-gray-200"></i>
+            </a>
+            </div>
           </div>
+          
         </section>
 
         <section className="" id="">
           <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md mb-0 px-10 shadow rounded-lg sm:px-10 dark:bg-white" id="contact edu1" >
-            <h4 className="text-center pt-10 text-xl">Contact Me</h4>
+            <h4 className="text-center pt-10 text-xl" id="contact">Contact Me</h4>
             <form className="mb-0 space-y-6 py-5 pt-0" action="https://formsubmit.co/parkn993@gmail.com" method="post">
               <input type ="hidden" name="_next" value="./thankyou.html"></input>
 
