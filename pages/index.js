@@ -48,18 +48,10 @@ const useTypedSuperpower = () => {
   return typedWord
 }
 
-
 //Main//
 export default function Home() {
   const subtitle = useTypedSuperpower()
   const [darkMode, setDarkMode] = useState(false);
-
-  function play() {
-    var audio = document.getElementById('a1');
-    audio.play();
-  }
-  
-  
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -121,36 +113,44 @@ export default function Home() {
               <Image src={deved} layout="fill" objectFit="cover" />
             </div>
           </div>
+          
         </section>
         <section className="animated">
         <h3 className="text-center text-3xl py-1 dark:text-white -skew-y-2 ml-10 hover:scale-105 transition-all" id="education"><br/>Education</h3> 
           <div className="-skew-y-2 bg-teal-500" id="slanted">
 
-            <br/><br/><br/><br/><br/>
+            <br/><br/><br/><br/><br/><br/><br/>
 
             <div id="edu" className="dark:bg-white skew-y-2 mx-20 rounded-xl hover:scale-105 transition-all">
-            <p className="text-center text-md py-2 leading-8 text-gray-800 dark:text-gray-900 motion-safe:animate-fadeIn ml-5 ">
-            <br/>
+            <p className="text-center text-lg py-2 leading-8 text-gray-800 dark:text-gray-900 motion-safe:animate-fadeIn ml-5 ">
+            <br/><br/><br/><br/>
               At age 29, I decided to make a career shift into tech! I'm a self-starter who understands the importance of
               <span className="text-blue-500"> DEADLINES </span>
               and <span className="text-blue-500">EFFICIENCY. </span>
               I hope to be part of your next project!
             </p>
-            <p className="text-center text-md py-2 leading-8 text-gray-800 dark:text-gray-900 motion-safe:animate-fadeIn ml-5 ">
+            <p className="text-center text-lg py-2 px-20 leading-8 text-gray-800 dark:text-gray-900 motion-safe:animate-fadeIn ml-10 ">
               In August of 2022, I attended a coding <span className="text-purple-500">BOOTCAMP </span> with a non-profit called Per Scholas where I completed over 450+ hours of hands-on technical training for <span className="text-red-500">Full Stack Web Development</span> focusing on the MERN tech stack. <br/> <br/>
-              <span className="italic text-yellow-700 hover:scale-110 transition-all"><a className="" href="#skills">MongoDB | Express | React.js | Node.js</a> </span> 
-              <br/><br/>
+              <span className="italic text-yellow-700 hover:scale-110 transition-all"><a className="">MongoDB | Express | React.js | Node.js</a> </span> 
+              <br/><br/><br/><br/>
               
             </p>
-            
+            <div className="text-center motion-safe:animate-bounce">
+            <a href="#skills" class="home__scroll-button">
+                <i class="uil uil-mouse-alt home__scroll-mouse dark:text-gray-900"></i>
+                    <span class="home__scroll-name dark:text-gray-900">Skills</span>
+                <i class="uil uil-arrow-down home__scroll-arrow dark:text-gray-900"></i>
+            </a>
+            </div>
+            <br/><br/>
             </div>
             <br/><br/><br/><br/><br/>
             <br/>
           </div>
-          <br/>
-          <h3 className="text-3xl py-1 dark:text-white text-center -skew-y-2 hover:scale-105 motion-safe:animate-bounce transition-all">Skills</h3>
+          <br/><br/><br/>
+          <h3 className="text-3xl py-1 dark:text-white text-center -skew-y-2 hover:scale-105 motion-safe:animate-bounce transition-all" id="skills">Skills</h3><br/>
           {/* Cards */}
-          <div className="lg:flex gap-10 mx-10" id="skills">
+          <div className="lg:flex gap-10 mx-10" >
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1 hover:scale-105 transition-all " id="edu1">
               <Image src={design} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">
@@ -200,7 +200,9 @@ export default function Home() {
                 // layout="responsive"
                 src={js}
               />
+              
             </div>
+            
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1 hover:scale-105 transition-all" id="edu1">
               <Image src={code} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
@@ -259,16 +261,29 @@ export default function Home() {
               <p className="text-gray-800 py-1">Ableton live</p>
             </div>
           </div>
-        </section>
+          <br/><br/>
+          <div className="text-center motion-safe:animate-bounce">
+            <a href="#portfolio" class="home__scroll-button">
+                <i class="uil uil-mouse-alt home__scroll-mouse dark:text-gray-200"></i>
+                    <span class="home__scroll-name dark:text-gray-200">Portfolio</span>
+                <i class="uil uil-arrow-down home__scroll-arrow dark:text-gray-200"></i>
+            </a>
+            </div>
+        </section><br/><br/><br/>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white text-center -skew-y-2 hover:scale-105 transition-all">Portofolio</h3>
+            <h3 className="text-3xl py-1 dark:text-white text-center -skew-y-2 hover:scale-105 transition-all"  id="portfolio">Portofolio</h3>
             
           </div>
+          <br/>
+          
           
           {/* portfolio images */}
+          
           <div className="bg-teal-500 flex flex-col gap-10 py-10 px-40 lg:flex-row lg:flex-wrap -skew-y-2">
+            
             <div className="basis-1/4 flex-1 skew-y-2 hover:scale-105 transition-all">
+              
               <Image
                 className="rounded-lg object-cover "
                 width={"100%"}
@@ -325,10 +340,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="">
-          <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md mb-0 px-10 shadow rounded-lg sm:px-10 " id="contact">
+        <section className="" id="">
+          <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md mb-0 px-10 shadow rounded-lg sm:px-10 dark:bg-white" id="contact edu1" >
             <h4 className="text-center pt-10 text-xl">Contact Me</h4>
-            <form className="mb-0 space-y-6 py-5 pt-0"  action="https://formsubmit.co/parkn993@gmail.com" method="post">
+            <form className="mb-0 space-y-6 py-5 pt-0" action="https://formsubmit.co/parkn993@gmail.com" method="post">
               <input type ="hidden" name="_next" value="./thankyou.html"></input>
 
               <label for="email" class="flex text-m font-medium pt-0">Email</label>
