@@ -16,7 +16,7 @@ import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
 import Image from "next/image";
-import web1 from "../public/web1.png";
+import web1 from "../public/npmovies.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
@@ -45,6 +45,7 @@ const useTypedSuperpower = () => {
     }, 150)
     return () => clearTimeout(timeout)
   }, [typedWord])
+  
   return typedWord
 }
 
@@ -284,8 +285,28 @@ export default function Home() {
           
           <br/>
           <br/>
-            <div className="basis-1/4 flex-1 skew-y-2 hover:scale-105 transition-all ">
-              
+          
+          <div className="text-center skew-y-2 btn-1">
+          <span className="text-center text-2xl">N.P Movies <br/></span>
+          <br/>
+          <p className="">
+            Created modern movie/show app utilizing OMDb API (www.omdbapi.com). Search and favorite movies/shows which are then saved to the local storage. Live app hosted on Heroku and source code on Github.
+          </p>
+          <br/><br/>
+          <a href="https://npreactmovies.herokuapp.com/" target="_blank">
+            <button className="px-5">
+              LIVE
+              <span className="span"></span>
+            </button>
+          </a> 
+          <a href="https://github.com/JustTheNorm/reactmovies" target="_blank">
+            <button className="px-5">
+              REPO
+              <span className="span"></span>
+            </button>
+          </a>
+          
+            <div className="basis-1/4 flex-1 hover:scale-105 transition-all ">
               <Image
                 className="rounded-lg object-cover "
                 width={"100%"}
@@ -293,6 +314,7 @@ export default function Home() {
                 layout="responsive"
                 src={web1}
               />
+            </div>
             </div>
             <div className="basis-1/4 flex-1 skew-y-2 hover:scale-105 transition-all">
               <Image
@@ -340,11 +362,7 @@ export default function Home() {
               />
             </div>
             <div className="text-center motion-safe:animate-bounce skew-y-2">
-            <a href="#contact" class="home__scroll-button">
-                <i class="uil uil-mouse-alt home__scroll-mouse dark:text-gray-200 "></i>
-                    <span class="home__scroll-name dark:text-gray-200 ">Contact Me</span>
-                <i class="uil uil-arrow-down home__scroll-arrow dark:text-gray-200"></i>
-            </a>
+            
             </div>
           </div>
           
@@ -361,7 +379,10 @@ export default function Home() {
 
               <span className="display-block mx-auto text-m font-medium">Message:</span> <br/><textarea className="border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 " cols={40} rows={10} type="text" name="message" placeholder="Write your message here" required></textarea>
               <br/>
-              <button className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text white bg-teal-500 hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-600 " type="submit">Send</button>
+              <button className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text white bg-teal-500 hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-600 pb-7" type="submit">Send
+              <span className="span"></span>
+              </button>
+              
              
             </form>
 
